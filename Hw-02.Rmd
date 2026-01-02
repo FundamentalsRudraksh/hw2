@@ -174,4 +174,11 @@ mistery = function(DF, positionsToUse, CountryColumn='Country'){ # Creates a fun
 ```
 The mystery/ mistery function basically calculates the row wise mean/ average of the selected columns and returns a data frame which contains the column name and the average.
 The function selects the Country column and stores it into a new data frame. It then creates a new column called average which would be used to store the average. Then the function uses the apply function with 1 to ensure that the mean is calculated row wise while ignoring the missing values. 
-It finally returns a new dataframe with two columns: country and average
+It finally returns a new data frame with two columns: country and average
+
+# Outputs for the new functions
+```{r}
+theOnesOK2(fragility23, "S1: Demographic Pressures")
+mistery(fragility23, 4:6)
+```
+
